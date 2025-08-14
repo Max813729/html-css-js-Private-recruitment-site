@@ -1,7 +1,9 @@
 new Swiper('.card-wrapper', {
     loop: true,
     speed: 700,
-    spaceBetween: 30,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    centeredSlides: true,
 
     // If we need pagination  
     pagination: {
@@ -14,17 +16,5 @@ new Swiper('.card-wrapper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        },
     }
 });
